@@ -34,7 +34,7 @@ func main() {
 	router.PanicHandler = exception.ErrorHandler
 
 	server := http.Server{
-		Addr:    "localhost:3000",
+		Addr:    "https://jagawaroeng-api.up.railway.app:3000",
 		Handler: middleware.NewAuthMiddleware(router),
 	}
 
