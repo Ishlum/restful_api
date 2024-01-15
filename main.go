@@ -34,7 +34,7 @@ func main() {
 	router.PanicHandler = exception.ErrorHandler
 
 	server := http.Server{
-		Addr:    "restful_api.railway.internal:3030",
+		Addr:    "jagawaroeng-api.up.railway.app:3000",
 		Handler: middleware.NewAuthMiddleware(router),
 	}
 
